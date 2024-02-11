@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="0.75" name="stage" folder="stages/alleyway/">
+    <sprite name="clocks" x="200" y="80" sprite="princessClocks" scale="3.2" />
+    <sprite name="clockScar" x="-190" y="680" sprite="princessClock" scale="1.65" />
+    <sprite name="clockFever" x="990" y="695" sprite="princessClock" scale="1.25" />
+    <sprite name="whittyBG" x="-728" y="-230" sprite="alleyway-night" scroll="0.9" scale="1.25" />
+    <dad x="-450" y="-250"/>
+    <boyfriend x="1100" y="-20"/>
+</stage>

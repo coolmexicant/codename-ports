@@ -1,0 +1,9 @@
+
+<!DOCTYPE codename-engine-character>
+<character x="0" icon="scarlet-final" y="0" isGF="false" flipX="false" isPlayer="false" sprite="Scarlet_Final" color="#E059B1" camx="200" camy="200">
+	<anim name="idle"      anim="Final scarlet idle"      fps="24" loop="false" x="0" y="0"/>
+	<anim name="singUP"    anim="Final scarlet up"    fps="24" loop="false" x="-180" y="99"/>
+	<anim name="singLEFT"  anim="Final scarlet right"  fps="24" loop="false" x="-301" y="-2"/>
+	<anim name="singRIGHT" anim="Final scarlet left" fps="24" loop="false" x="-200" y="2"/>
+	<anim name="singDOWN"  anim="Final scarlet down"  fps="24" loop="false" x="-20" y="-160"/>
+</character>

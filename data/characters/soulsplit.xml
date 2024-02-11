@@ -1,0 +1,15 @@
+<!DOCTYPE codename-engine-character>
+<character x="0" icon="soulsplit" camx="-200" y="350" isGF="false" camy="-200" color="#E784A3" flipX="true" isPlayer="true" sprite="soulsplit">
+	<anim x="6" loop="false" y="93" fps="24" anim="fever idle0" name="idle"/>
+	<anim x="42" loop="false" y="79" fps="24" anim="fever up0" name="singUP"/>
+	<anim x="90" loop="false" y="91" fps="24" anim="fever left0" name="singLEFT"/>
+	<anim x="27" loop="false" y="108" fps="24" anim="fever right0" name="singRIGHT"/>
+	<anim x="38" loop="false" y="29" fps="24" anim="fever down0" name="singDOWN"/>
+	<anim x="110" loop="false" y="91" fps="24" anim="fever left miss" name="singLEFTmiss"/>
+	<anim x="41" loop="false" y="28" fps="24" anim="fever down miss" name="singDOWNmiss"/>
+	<anim x="40" loop="false" y="103" fps="24" anim="fever up miss" name="singUPmiss"/>
+	<anim x="20" loop="false" y="105" fps="24" anim="fever right miss" name="singRIGHTmiss"/>
+	<anim x="27" loop="false" y="92" fps="24" anim="fever hey" name="hey"/>
+	<anim x="62" loop="false" y="120" fps="24" anim="fever dodge" name="dodge"/>
+	<anim x="11" loop="false" y="93" fps="24" anim="fever idle frown" name="idle-frown"/>
+</character>

@@ -9,8 +9,9 @@
 	],
 	"needsVoices": true,
 	"parsedColor": -1,
-	"displayName": "Bloom",
-	"icon": "Icon",
+	"displayName": "BLOOM",
+	"icon": "scarlet-final",
 	"name": "Bloom",
-	"color": "#FFFFFF"
+	"color": "#FFFFFF",
+	"customValues": {}
 }
