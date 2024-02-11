@@ -20,3 +20,15 @@ function postUpdate() {
             camGame.angle = (lerp(camGame.angle, 0, angleMoveSpeed));
     }
 }
+
+function stepHit(curStep) {
+    if(curStep >= 767 && curStep < 1025){
+        cammove = 0;
+        angleMoveSpeed = 0;
+        angleVar = 0;
+    }else{
+        cammove = 60;
+        angleMoveSpeed = 0.3;
+        angleVar = 1;
+    }
+}
