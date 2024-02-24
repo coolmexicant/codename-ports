@@ -1,5 +1,6 @@
 import funkin.backend.utils.CoolUtil;
 import funkin.backend.utils.CoolUtil.CoolSfx;
+import funkin.menus.FreeplayState;
 
 var subway_bg:FunkinSprite;
 var story:FlxSprite;
@@ -9,10 +10,6 @@ var freeplay:FlxSprite;
 var storyMouse:FlxSprite;
 var optionsMouse:FlxSprite;
 var freeplayMouse:FlxSprite;
-
-var secretWord:Array<String> = ["S", "H", "A", "D", "O", "W"];
-var maxLetters:Int = 5; //Since is from 1 - 6, haxe uses 0 as the start
-var curLetter:Int = 0;
 
 function create() {
     FlxG.mouse.visible = true;
@@ -56,7 +53,7 @@ function postCreate() {
     options.animation.play('nonselect');
     freeplay.animation.play('nonselect');
 }
-function update(elapsed:Float) {
+function postUpdate(elapsed:Float) {
     if(FlxG.mouse.overlaps(storyMouse)){
         story.animation.play('select');
         story.y = 100;
@@ -88,7 +85,7 @@ function update(elapsed:Float) {
         if(FlxG.mouse.justPressed){
             freeplay.animation.play('confirm');
             CoolUtil.playMenuSFX(CoolSfx.CONFIRM, 1.25);
-            new FlxTimer().start(0.5, function(timer)FlxG.game._requestedState = new ModState("menus/Sorry"));
+            new FlxTimer().start(0.5, function(timer)FlxG.game._requestedState = new FreeplayState());
         }
     }else{
         freeplay.animation.play('nonselect');

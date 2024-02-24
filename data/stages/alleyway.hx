@@ -7,24 +7,25 @@ var isFly:Bool = false;
 function create() {
     dad.color = 0xFFA569BC;
     boyfriend.color = 0xFFA569BC;
-    defaultCamZoom = 0.7;
 
     wiggleEffect = new WiggleEffect();
     wiggleEffect.shader.effectType.value = [4];
     wiggleEffect.waveAmplitude = 0.02;
     wiggleEffect.waveFrequency = 3;
     wiggleEffect.waveSpeed = 0.71;
-
     clocks.shader = wiggleEffect.shader;
+    clocks.visible = false;
+    clockScar.visible = false;
+    clockFever.visible = false;
 }
 
 function stepHit(curStep) {
     switch(curStep){
         case 256:
-            dad.color = boyfriend.color = FlxColor.WHITE;
-            defaultCamZoom = 0.53;
-            camHUD.flash(FlxColor.WHITE, 0.5);
             whittyBG.visible = false;  
+            clocks.visible = true;
+            clockScar.visible = true;
+            clockFever.visible = true;
             isFly = true;
         case 767:
             isFly = false;
